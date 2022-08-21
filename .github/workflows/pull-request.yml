@@ -16,4 +16,4 @@ jobs:
           envkey_DATABASE_URL: "postgresql://postgres:postgres@drivenops_db:5432/students-tests"
           file_name: back-end/.env.test
       - name: Run tests
-        run: docker-compose -f docker-compose-test.yml run drivenops_app npm run test
+        run: docker-compose -f docker-compose-test.yml run node_app npm run test
