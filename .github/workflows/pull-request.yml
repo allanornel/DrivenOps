@@ -1,7 +1,7 @@
 name: Validate Pull Request
 on: [pull_request]
 
-name: Test
+name: Tests of Pull Reqyuest
 jobs:
   PullRequest:
     runs-on: ubuntu-latest
