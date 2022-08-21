@@ -24,8 +24,11 @@ jobs:
           envkey_REACT_APP_BASE_URL: ${{secrets.REACT_APP_BASE_URL}}
           file_name: front-end/.env
 
+      - name: Inactive Docker-Compose
+        run: docker-compose down -v
+
       - name: Build
         run: docker-compose build
 
       - name: Run
-        run: docker-compose down -v && docker-compose up -d
+        run: docker-compose up -d
